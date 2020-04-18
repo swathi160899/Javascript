@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|WELCOME|</title>
+</head>
+<script>
+	function logout(){
+		window.location.href="login.html";
+	}
+</script>
+<body>
+<p id='display'></p>
+<script>
+	var p=new URLSearchParams(window.location.search);
+	var name=localStorage.getItem("uname");
+	document.getElementById('display').innerHTML="WELCOME&nbsp"+ name;
+</script>
+<button onclick="return logout()"> Logout </button>
+</body>
+</html>

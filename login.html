@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|LOGIN|</title>
+	<script type="text/javascript">
+		function getdata(){
+			var a=document.getElementById('fname').value;
+			var b=document.getElementById('pass').value;
+			if(a=="swathi" && b=="24"){
+				localStorage.setItem("uname",a);
+				document.form.action="login2.html+uname="+a;
+				document.form.action="login2.html";
+			} else {
+				alert("invalid username");
+				return false;
+			}
+			}
+	</script>
+</head>
+<body>
+ <div class="container">
+ 	<form name="form">
+ 		<div class="frm">
+ 			<label> Username</label>
+ 			<input type="text" name="" id="fname" required>
+ 			<label> Password</label>
+ 			<input type="Password" name="" id="pass" required>
+ 			<button type="submit" name="submit" onclick="return getdata()"> Login </button>
+</body>
+</html>
