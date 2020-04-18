@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|ARRAY|</title>
+</head>
+<body>
+	<h1><font color="#009933"><b>MY ARRAY</b></font></h1>
+	<label>Enter number of elements to insert:</label>
+	<input type="text" id="num" name="number">
+	<input type="button" value="Print Array" onclick="insert()" name="print"><br><br>
+	<label>Enter number of elements to remove:</label>
+	<input type="text" id="num1" name="number">
+	<input type="button" value="Remove" onclick="remove()" name="remove2">
+	<br><br>
+	<div id="get"></div>
+	<div id="take"></div>
+	<script type="text/javascript">
+		var arr = [];
+		function insert(){
+			var n=document.getElementById("num").value;
+			for(var i = 0; i < n; i++)
+				arr.push(prompt("Enter a number"));
+					document.getElementById("get").innerHTML=arr;
+				}
+				function remove(){
+					var n=document.getElementById("num1").value;
+					for(var i = 0; i < n; i++)
+					arr.pop(prompt("Enter a number"));
+					document.getElementById("take").innerHTML=arr;
+			}
+	</script>
+</body>
+</html>
