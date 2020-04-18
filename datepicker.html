@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>datepicker</title>
+	<script type="text/javascript">
+		function daydis(){
+			var d=new Date();
+			document.getElementById('a').innerHTML=d;
+            n=new Date()
+            n.setDate(n.getDate()-7)
+			document.getElementById('b').innerHTML=n;
+			v=new Date()
+            v.setDate(v.getDate()+7)
+
+			document.getElementById('c').innerHTML=v;
+
+		}
+	</script>
+</head>
+<body onload="daydis()">
+<p align="center">Today Is </p>
+<div align="center"  id="a"></div>
+<p align="center">MeanStack Training Started On </p>
+<div align="center" id="b"></div>
+<p align="center">College Reopens On </p>
+<div align="center" id="c"></div>
+</body>
+<style type="text/css">
+	div{
+		background-color: #33adff;
+		font-family: cursive;
+		height: 50px;
+	}
+	body{
+		background-color: #ccff66;
+	}
+</style>
+</html>

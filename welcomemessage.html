@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button class="btn" onclick="message()"> User Name </button>
+
+<p id="msg"></p>
+
+<script>
+function message() {
+  var text;
+  var person = prompt("Enter the user name:");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Welcome to my webpage&nbsp"+ person + "!!!!!!";
+  }
+  document.getElementById("msg").innerHTML = text;
+}
+</script>
+<style type="text/css">
+	.btn{
+		 background-color: #008CBA;
+		 font-size: 25px;
+		 padding: 16px;
+		 border-radius: 12px;
+		 border-color:white;
+		 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+</style>
+
+</body>
+</html>

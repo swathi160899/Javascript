@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|GROCERY|</title>
+</head>
+<body>
+	<button onclick="addItem()">ADD</button>
+	<button onclick="removeItem()">REMOVE</button>
+	<button onclick="replaceItem()">REPLACE</button>
+	<ul id="items">
+		<li>Frozen Food</li>
+		<li>Salad Dressing</li>
+		<li>Canned Goods</li>
+	</ul>
+<script type="text/javascript">
+	function addItem(){
+		var it1=prompt("Enter more groceries");
+		var list=document.getElementById("items");
+    	var li=document.createElement('li');
+    	li.appendChild(document.createTextNode(it1));
+    	list.appendChild(li);
+	}
+	function removeItem(){
+		var listli=document.getElementById("items");
+    	listli.removeChild(listli.childNodes[1]);
+    }
+    function replaceItem(){
+    	var textnode = document.createTextNode("Pasta");
+    	var it2 = document.getElementById("items").childNodes[0];
+    	it2.replaceChild(textnode, it2.childNodes[0]);
+    }
+
+</script>
+
+</body>
+</html>

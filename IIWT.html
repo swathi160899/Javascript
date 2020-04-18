@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|IIWT|</title>
+	<style>
+		button{
+			background-color: white;
+			color: green;
+			border: 2px solid green;
+			font-size: 30px;
+		}
+	</style>
+	<script>
+		function stringop(){
+			var re=/IIWT/gi;
+			var str=prompt("Enter your string");
+			var res=str.slice(9,14);
+			var newstr=str.replace(re,"ITL");
+			var combine="&nbsp&nbspAll the best";
+			var n=str.lastIndexOf("a");
+			document.getElementById("string").innerHTML=res+"<br>"+newstr+"<br>"+newstr.concat(combine)+"<br>"+n;
+		}
+	</script>
+</head>
+<body>
+	<div id="string">
+		<button onclick="stringop()">String Operations</button>
+	</div>
+
+</body>
+</html>

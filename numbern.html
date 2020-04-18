@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>|NUMBER|</title>
+</head>
+<body>
+	<button onclick="fibonacci()">Fibonacci Series</button>
+	<button onclick="even()">Even Numbers</button>
+	<button onclick="odd()">Odd Numbers</button>
+	<script>
+		var n=prompt("Enter a number");
+		function fibonacci(){
+			var x=0;
+			var y=1;
+			var i,z;
+			for(i=2; i<n; i++)
+			{
+			    z=x+y;
+				document.write("",z,"");
+				x=y;
+			    y=z;
+			}
+		}
+		function even(){
+			var j;
+			for(j=1;j<n;j++){
+				if(j % 2==0){
+					document.write("",j,"");
+				}
+			}
+			}
+			function odd(){
+				var k;
+				for(k=1;k<n;k++){
+					if(k%2!=0){
+						document.write("",k,"");
+					}
+				}
+				}
+			
+	</script>
+
+</body>
+</html>
